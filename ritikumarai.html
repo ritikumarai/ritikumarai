@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Risk Analyst</title>
+    <link rel="stylesheet" href="ritikumarai.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Professional Profile</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li class="dropdown">
+                <a href="#experience" class="dropbtn">Experience</a>
+                <div class="dropdown-content">
+                    <a href="#current-job">Current Job</a>
+                    <a href="#previous-job">Previous Job</a>
+                </div>
+            </li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#honors">Honors & Awards</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>As a Risk Analyst at mastertrust, I am passionate about ensuring the integrity of financial transactions through meticulous analysis and risk management. With a BBA in Banking and Finance, coupled with hands-on experience in client relations and product promotion at YES BANK, I bring a unique blend of analytical and interpersonal skills to my role. My goal is to continue supporting business growth while safeguarding financial operations. Let's connect and explore how we can work together to navigate today's complex financial landscape.</p>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <section id="current-job">
+            <h3>Current Job Profile: Risk Analyst</h3>
+            <p>Company Name: mastertrust<br>Employment Time: Jan 2024 - Present<br>Location: Delhi, India</p>
+            <ul>
+                <li>Spearheaded initiatives to monitor transactions, successfully identifying and mitigating over 200 suspicious activities per month.</li>
+                <li>Proactively managed and analyzed surveillance alerts, leading to a 15% increase in compliance accuracy.</li>
+                <li>Implemented enhanced surveillance processes, staying ahead of industry best practices for continuous improvement.</li>
+            </ul>
+        </section>
+        <section id="previous-job">
+            <h3>Previous Job Profile: Senior Officer</h3>
+            <p>Company Name: YES BANK<br>Employment Time: Nov 2022 - May 2023<br>Location: Delhi, India</p>
+            <ul>
+                <li>Acquired over 100 new accounts, contributing to a 20% increase in branch business growth.</li>
+                <li>Successfully promoted banking products, boosting revenue by 10%.</li>
+                <li>Organized and supported over 15 corporate events, strengthening SME relationships and generating significant leads.</li>
+            </ul>
+        </section>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <p>University Name: Jagannath University<br>Graduation Course: Bachelor of Business Administration, Banking and Finance<br>Graduated in Sep 2022<br>Grade: CGPA 8.29</p>
+    </section>
+    <section id="certifications">
+        <h2>Licenses & Certifications</h2>
+        <ul>
+            <li>NISM-Series-VIII: Equity Derivatives Certification Examination</li>
+            <li>NISM-Series-XVI: Commodity Derivatives Certification Examination</li>
+            <li>Excel Essentials by LinkedIn</li>
+            <li>Excel: Macro and VBA for Beginners by LinkedIn</li>
+        </ul>
+    </section>
+    <section id="honors">
+        <h2>Honors & Awards</h2>
+        <p>Silver Medalist<br>Mar 2023<br>Associated with Jagan Institute Of Management Studies (JIMS Rohini)</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Ritik Kumar Rai</p>
+        <div id="moving-element">Stay Connected!</div>
+        <p><a href="https://www.linkedin.com/in/ritikumarai/" target="_blank">Connect with me on LinkedIn</a></p>
+    </footer>
+    <script>
+        // Simple animation for the moving element
+        const movingElement = document.getElementById('moving-element');
+        let position = 0;
+        const animate = () => {
+            position++;
+            movingElement.style.transform = `translateX(${position}px)`;
+            if (position >= window.innerWidth) {
+                position = 0;
+            }
+            requestAnimationFrame(animate);
+        };
+        animate();
+    </script>
+</body>
+</html>
